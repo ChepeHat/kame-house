@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kame House 🟠</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200;300;400;500&family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header_box">
+        <div class="header__kamehouse">
+            <h1 class="title__kamehouse" >KAME HOUSE</h1>
+            <img class="logo_kamehouse" src="assets/kame-house.svg"></img>
+        </div>
+    </header>
+    <main>
+        <aside class="addProduct">
+            <div class="addProduct__title">
+                <h2 class="addProduct__title-txt">Agregar producto: </h2>
+            </div>
+            <div class="addProduct__form" >
+                <input class="addProduct__form-input" placeholder="nombre..." class="input-placeholder"></input>
+                <input class="addProduct__form-input" placeholder="precio..." class="input-placeholder"></input>
+                <input class="addProduct__form-input" placeholder="imagen..." class="input-placeholder"></input>
+            </div>
+            <div class="addProduct__button">
+                <button class="addProduct__button-send">Enviar</button>
+                <button class="addProduct__button-clear">Limpiar</button>
+            </div>
+        </aside>
+        <section class="product" id="my__products">
+            <div class="product__title">
+                <h2 class="product__title-txt">Mis productos</h2>
+            </div>
+            <ul class="product__elements" id="product__list">
+                <li class="product__card" id="product__elements-card">
+                    <img class="card__image" src="assets/img1.jpg" alt="producto1">
+                    <h3 class="card__name">GameBoy Classic</h3>
+                    <div class="card__bottom">
+                        <p class="card__bottom-price">$ 200.00</p>
+                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
+                    </div>
+                </li>
+                <li class="product__card" id="product__elements-card">
+                    <img class="card__image" src="assets/img2.jpg" alt="producto2">
+                    <h3 class="card__name">Taza Stormtrooper</h3>
+                    <div class="card__bottom">
+                        <p class="card__bottom-price">$ 100.00</p>
+                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
+                    </div>
+                </li>
+                <li class="product__card" id="product__elements-card">
+                    <img class="card__image" src="assets/img1.jpg" alt="producto1">
+                    <h3 class="card__name">GameBoy Classic</h3>
+                    <div class="card__bottom">
+                        <p class="card__bottom-price">$ 200.00</p>
+                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
+                    </div>
+                </li>
+                <li class="product__card" id="product__elements-card">
+                    <img class="card__image" src="assets/img2.jpg" alt="producto2">
+                    <h3 class="card__name">Taza Stormtrooper</h3>
+                    <div class="card__bottom">
+                        <p class="card__bottom-price">$ 100.00</p>
+                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
+                    </div>
+                </li>
+                <li class="product__card" id="product__elements-card">
+                    <img class="card__image" src="assets/img1.jpg" alt="producto1">
+                    <h3 class="card__name">GameBoy Classic</h3>
+                    <div class="card__bottom">
+                        <p class="card__bottom-price">$ 200.00</p>
+                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
+                    </div>
+                </li>
+                <li class="product__card" id="product__elements-card">
+                    <img class="card__image" src="assets/img2.jpg" alt="producto2">
+                    <h3 class="card__name">Taza Stormtrooper</h3>
+                    <div class="card__bottom">
+                        <p class="card__bottom-price">$ 100.00</p>
+                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__kamehouse">
+            <h1 class="title__kamehouse" >KAME HOUSE</h1>
+            <img class="logo_kamehouse" src="assets/kame-house_w.svg"></img>
+        </div>
+        <div class="footer__text">
+            <p>Desarollado X Armando Sombrerero</p>
+            <p>Challenge Alura Geek - 2024</p>
+        </div>
+    </footer>
+    
+</body>
+</html>

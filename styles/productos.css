@@ -1,0 +1,72 @@
+
+/* Sección de MIS PRODUCTOS */
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px ;
+}
+
+.product__title-txt{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.product__elements{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+}
+
+/* CARD PRODUCTOS */
+
+
+.product__card{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #F85B1A;
+    color: white;
+    padding: 10px;
+    border: solid 3px black;
+    box-shadow: -3px 3px 4px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    font-family: "IBM Plex Mono", monospace;
+    width: 120px;
+    height: 200px;
+}
+
+.card__image{
+    border: solid 3px black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.card__name{
+    font-size: 15px;
+    font-weight: 300;
+}
+
+/* Parte inferior del Card con precio y Botón de trash */
+.card__bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.card__bottom-price{
+    font-weight: 500;
+}
+
+@media (min-width: 768px) {
+    .product__elements{
+        width: 600px;
+        height: 600px;
+        overflow: scroll;
+
+    }
+    
+}
+
