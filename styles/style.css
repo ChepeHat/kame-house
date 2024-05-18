@@ -98,6 +98,8 @@ footer{
         display: flex;
         flex-direction:row-reverse;
         justify-content: space-around;
-        align-items: start;
+        align-items: baseline;
+        height: 600px;
+
     }
 }

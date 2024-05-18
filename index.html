@@ -22,27 +22,33 @@
             <div class="addProduct__title">
                 <h2 class="addProduct__title-txt">Agregar producto: </h2>
             </div>
-            <div class="addProduct__form" >
-                <input class="addProduct__form-input" placeholder="nombre..." class="input-placeholder"></input>
-                <input class="addProduct__form-input" placeholder="precio..." class="input-placeholder"></input>
-                <input class="addProduct__form-input" placeholder="imagen..." class="input-placeholder"></input>
-            </div>
-            <div class="addProduct__button">
-                <button class="addProduct__button-send">Enviar</button>
-                <button class="addProduct__button-clear">Limpiar</button>
-            </div>
+            <form class='addProduct__form' data-form>
+                <input class="addProduct__form-input" placeholder="nombre..."  data-name></input>
+                <input class="addProduct__form-input" placeholder="precio..." data-price></input>
+                <input class="addProduct__form-input" placeholder="imagen..." data-image></input>
+                
+                <div class="addProduct__button">
+                    <button class="addProduct__button-send">Enviar</button>
+                    <button class="addProduct__button-clear">Limpiar</button>
+                </div>
+            </form>
+            
+
         </aside>
+
         <section class="product" id="my__products">
             <div class="product__title">
                 <h2 class="product__title-txt">Mis productos</h2>
             </div>
-            <ul class="product__elements" id="product__list">
-                <li class="product__card" id="product__elements-card">
+            <ul class="product__container" id="product__list" data-product>
+                <!-- <li class="product__card" id="product__elements-card">
                     <img class="card__image" src="assets/img1.jpg" alt="producto1">
                     <h3 class="card__name">GameBoy Classic</h3>
                     <div class="card__bottom">
                         <p class="card__bottom-price">$ 200.00</p>
-                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
+                        <button class="card__bottom-delete" data-id="1">
+                            <img src="assets/trash.svg" alt="Eliminar"></img>
+                        </button>
                     </div>
                 </li>
                 <li class="product__card" id="product__elements-card">
@@ -50,41 +56,11 @@
                     <h3 class="card__name">Taza Stormtrooper</h3>
                     <div class="card__bottom">
                         <p class="card__bottom-price">$ 100.00</p>
-                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
+                        <button class="card__bottom-delete" data-id="1">
+                            <img src="assets/trash.svg" alt="Eliminar"></img>
+                        </button>
                     </div>
-                </li>
-                <li class="product__card" id="product__elements-card">
-                    <img class="card__image" src="assets/img1.jpg" alt="producto1">
-                    <h3 class="card__name">GameBoy Classic</h3>
-                    <div class="card__bottom">
-                        <p class="card__bottom-price">$ 200.00</p>
-                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
-                    </div>
-                </li>
-                <li class="product__card" id="product__elements-card">
-                    <img class="card__image" src="assets/img2.jpg" alt="producto2">
-                    <h3 class="card__name">Taza Stormtrooper</h3>
-                    <div class="card__bottom">
-                        <p class="card__bottom-price">$ 100.00</p>
-                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
-                    </div>
-                </li>
-                <li class="product__card" id="product__elements-card">
-                    <img class="card__image" src="assets/img1.jpg" alt="producto1">
-                    <h3 class="card__name">GameBoy Classic</h3>
-                    <div class="card__bottom">
-                        <p class="card__bottom-price">$ 200.00</p>
-                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
-                    </div>
-                </li>
-                <li class="product__card" id="product__elements-card">
-                    <img class="card__image" src="assets/img2.jpg" alt="producto2">
-                    <h3 class="card__name">Taza Stormtrooper</h3>
-                    <div class="card__bottom">
-                        <p class="card__bottom-price">$ 100.00</p>
-                        <img class="card__bottom-delete" src="assets/trash.svg"></img>
-                    </div>
-                </li>
+                </li> -->
             </ul>
         </section>
     </main>
@@ -98,6 +74,6 @@
             <p>Challenge Alura Geek - 2024</p>
         </div>
     </footer>
-    
+    <script type="module" src="/js/controllers/main.js"></script>
 </body>
 </html>

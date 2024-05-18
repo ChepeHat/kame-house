@@ -1,0 +1,28 @@
+{
+  "products": [
+    {
+      "name": "Vegeta Chido",
+      "price": "150.00",
+      "image": "../assets/img2.jpg",
+      "id": 1
+    },
+    {
+      "name": "Trunks chidote",
+      "price": "200.00",
+      "image": "https://m.media-amazon.com/images/I/616zTATCRGL.__AC_SX300_SY300_QL70_ML2_.jpg",
+      "id": 2
+    },
+    {
+      "name": "Trunks",
+      "price": "100.00",
+      "image": "https://drive.google.com/file/d/1VjaHD0-v4vtw0yi8q8_1RvgY98jia8Nj/preview",
+      "id": 3
+    },
+    {
+      "name": "Hulk mamado",
+      "price": "2300",
+      "image": "https://m.media-amazon.com/images/I/516X0YLRV+L._AC_SY300_SX300_.jpg",
+      "id": 4
+    }
+  ]
+}

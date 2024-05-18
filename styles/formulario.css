@@ -5,10 +5,12 @@
     flex-direction: column;
     align-items: center;
     gap: 15px;
+    max-width: 450px;
+    flex-grow: 1;
 }
 
 .addProduct__title{
-    padding: 0 50px;
+    padding: 0 20px;
 }
 
 .addProduct__title-txt{
