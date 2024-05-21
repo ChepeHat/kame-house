@@ -16,9 +16,8 @@
 
 .product__container{
     display: flex;
-    gap: 10px;
+    gap: 15px;
     flex-wrap: wrap;
-    display: flex;
     justify-content: center;
 }
 
@@ -37,7 +36,7 @@
     border-radius: 20px;
     font-family: "IBM Plex Mono", monospace;
     width: 120px;
-    height: 200px;
+    min-height: 150px;
 }
 
 .product__card:hover{
@@ -45,6 +44,7 @@
 }
 
 .card__image{
+    height: 110px;
     border: solid 3px black;
     border-radius: 10px;
     object-fit: cover;
@@ -52,15 +52,20 @@
 .card__name{
     font-size: 15px;
     font-weight: 300;
+    line-height: 15px;
+    height: 35px;
 }
 
 /* Parte inferior del Card con precio y Botón de trash */
 .card__bottom{
     display: flex;
     justify-content: space-between;
+    display: flex;
+    align-items: center;
 }
 
 .card__bottom-price{
+    font-size: 15px;
     font-weight: 500;
 }
 
@@ -78,8 +83,29 @@
         width: 600px;
         height: 600px;
         overflow: scroll;
-
     }
-    
-}
+    .product__container{
+        justify-content: start;
+        overflow: auto;
+        padding: 10px;
+    }
+    .product{
+        max-width: 500px;
+        max-height: 500px;
+    } 
 
+    ::-webkit-scrollbar {
+        width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+        background: #fcc0a6;
+        border-radius: 50px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #F85B1A;
+        border-radius: 50px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: #072083;
+    }
+}

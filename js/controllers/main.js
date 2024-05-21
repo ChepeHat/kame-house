@@ -7,11 +7,11 @@ const form = document.querySelector('[data-form]');
 
 function createCard (name, price, image, id){
     const card = document.createElement('li');
-    card.classList.add('product__card');
+    // card.classList.add('product__card');
 
     card.innerHTML = `
         <li class="product__card" id="product__elements-card">
-            <img class="${image}" alt="${name}">
+            <img class="card__image" src="${image}" alt="${name}">
             <h3 class="card__name">${name}</h3>
             <div class="card__bottom">
                 <p class="card__bottom-price">$ ${price}</p>

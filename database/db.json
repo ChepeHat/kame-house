@@ -1,28 +1,64 @@
 {
   "products": [
     {
-      "name": "Vegeta Chido",
-      "price": "150.00",
-      "image": "../assets/img2.jpg",
-      "id": 1
-    },
-    {
-      "name": "Trunks chidote",
+      "name": "Trunks Figura Acción",
       "price": "200.00",
       "image": "https://m.media-amazon.com/images/I/616zTATCRGL.__AC_SX300_SY300_QL70_ML2_.jpg",
-      "id": 2
+      "id": "2"
     },
     {
-      "name": "Trunks",
-      "price": "100.00",
-      "image": "https://drive.google.com/file/d/1VjaHD0-v4vtw0yi8q8_1RvgY98jia8Nj/preview",
-      "id": 3
+      "id": "bd2c",
+      "name": "Gokú Funko",
+      "price": "10.00",
+      "image": "https://ss610.liverpool.com.mx/xl/1100212265.jpg"
     },
     {
-      "name": "Hulk mamado",
-      "price": "2300",
-      "image": "https://m.media-amazon.com/images/I/516X0YLRV+L._AC_SY300_SX300_.jpg",
-      "id": 4
+      "id": "486f",
+      "name": "Colección Gokú Lego",
+      "price": "300.00",
+      "image": "https://i.ytimg.com/vi/Suqlp6p3ibU/maxresdefault.jpg"
+    },
+    {
+      "id": "88e1",
+      "name": "Dabura Colección",
+      "price": "500.00",
+      "image": "https://media.entertainmentearth.com/assets/images/5b185871709a4dc3a200830dac50afe2lg.jpg"
+    },
+    {
+      "id": "e5b9",
+      "name": "Dendé y las esferas",
+      "price": "650.00",
+      "image": "https://m.media-amazon.com/images/I/61MnR1Ja6FS._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+      "id": "c5d3",
+      "name": "Porunga Dragon",
+      "price": "300.00",
+      "image": "https://images.stockx.com/images/Bandai-Japan-Dragon-Ball-GT-SH-Figuarts-Porunga-Dende-Luminous-Dragon-Ball-Set-Come-Forth-Genuine-Shenron-Action-Figure.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1659978077"
+    },
+    {
+      "id": "4aff",
+      "name": "Gokú Black",
+      "price": "350.00",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_761694-MLM42746940125_072020-O.webp"
+    },
+    {
+      "id": "be0d",
+      "name": "Bills Funko ",
+      "price": "150.00",
+      "image": "https://http2.mlstatic.com/D_NQ_NP_2X_617501-MLA51841749744_102022-V.webp"
+    },
+    {
+      "id": "4513",
+      "name": "Majin Boo",
+      "price": "250.00",
+      "image": "https://i5.walmartimages.com.mx/mg/gm/3pp/asr/a2913523-5640-4af5-8bc7-42d3f60da854.e7de4e60a578193cc3935f6308f89748.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF"
+    },
+    {
+      "id": "3d36",
+      "name": "Cell Colección",
+      "price": "380.00",
+      "image": "https://m.media-amazon.com/images/I/710iYDgkXZL.jpg"
     }
   ]
 }
