@@ -23,14 +23,16 @@
                 <h2 class="addProduct__title-txt">Agregar producto: </h2>
             </div>
             <form class='addProduct__form' data-form>
-                <input class="addProduct__form-input" placeholder="nombre..."  data-name></input>
-                <input class="addProduct__form-input" placeholder="precio..." data-price></input>
-                <input class="addProduct__form-input" placeholder="imagen..." data-image></input>
+                <input type="text" class="addProduct__form-input" placeholder="nombre..."  data-name></input>
+                <input type="number" step="0.01" class="addProduct__form-input" placeholder="precio..." data-price></input>
+                <input type="url" class="addProduct__form-input" placeholder="imagen..." data-image></input>
                 
                 <div class="addProduct__button">
                     <button class="addProduct__button-send">Enviar</button>
                     <button class="addProduct__button-clear">Limpiar</button>
                 </div>
+                <p class="addProduct__mensaje-exito">¡Se agregó el producto con éxito!</p>
+                <p class="addProduct__mensaje">Debes completar todos los campos</p>
             </form>
             
 

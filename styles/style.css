@@ -12,6 +12,12 @@
 
 body{
     font-family: "Pixelify Sans", sans-serif;
+    color: white;
+    background-image: url(/assets/kamehouse-bg.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
 }
 
 /* HEADER */
@@ -48,7 +54,7 @@ main{
     align-items: center;
     margin: 2rem;
     gap: 40px;
-    height: 100%
+    height: 100%;
 }
 
 /* FOOTER */
@@ -94,12 +100,12 @@ footer{
 /* Versión Tablet */
 
 @media (min-width: 768px) {
+    
     main{
         display: flex;
         flex-direction:row-reverse;
         justify-content: space-around;
         align-items: baseline;
         max-height: 600px;
-
     }
 }

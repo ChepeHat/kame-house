@@ -1,7 +1,13 @@
 import { servicesProducts } from "../services/product-services.js";
 
+// import validaciones from "./validacion.js";
+
 const productContainer = document.querySelector('[data-product]')
 const form = document.querySelector('[data-form]');
+
+const inputs = form.querySelectorAll('input');
+const clearButton = document.querySelector(".addProduct__button-clear")
+const sendButton = document.querySelector(".addProduct__button-send");
 
 
 
@@ -36,6 +42,38 @@ function createCard (name, price, image, id){
     return card;
 }
 
+// Función para borrar el formulario
+
+clearButton.addEventListener("click", (event) => {
+    event.preventDefault();
+    
+    inputs.forEach(input => {
+        input.value = "";
+    });
+});
+
+
+sendButton.addEventListener("click", async (event) => {
+    event.preventDefault();
+
+
+      // Obtiene los valores de los inputs
+    const name = document.querySelector('[data-name]').value;
+    const price = document.querySelector('[data-price]').value;
+    const image = document.querySelector('[data-image]').value;
+
+      // Lógica asincrónica para manejar el envío del formulario
+    try {
+        await servicesProducts.createProduct(name, price, image);
+          render();  // Vuelve a renderizar la lista de productos
+    } catch (error) {
+        console.log(error);
+    }
+});
+
+
+
+// Función para renderizar los productos
 const render = async () => {
     try {
         const listProducts = await servicesProducts.productList();
@@ -53,22 +91,6 @@ const render = async () => {
         console.log(error)
     }
 }
-
-form.addEventListener("submit", async (event) => {
-    event.preventDefault();
-
-    const name = document.querySelector('[data-name]').value;
-    const price = document.querySelector('[data-price]').value;
-    const image = document.querySelector('[data-image]').value;
-
-    try{
-        await servicesProducts.createProduct(name, price, image)
-        render();
-        } catch (error) {
-            console.log(error);
-    }
-});
-
 
 
 render();

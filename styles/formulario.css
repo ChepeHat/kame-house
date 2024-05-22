@@ -11,12 +11,13 @@
 
 .addProduct__title{
     padding: 0 20px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
 
 .addProduct__title-txt{
     text-align: center;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .addProduct__form{
@@ -24,17 +25,22 @@
     flex-direction: column;
     gap: 15px;
     width: 100%;
+
+
 }
 
 .addProduct__form-input{
-    border: solid 2px #F85B1A;
+    border: solid 3px #F85B1A;
     border-radius: 10px;
-    height: 35px;
-    padding-left: 10px ;
+    height: 45px;
+    padding-left: 10px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+    background-color: rgba(0, 0, 0, .3);
+    color: white;
 }
 
 .addProduct__form-input::placeholder{
-    color: rgba(0, 0, 0, 0.500);
+    color:  rgba(255, 255, 255, 0.750);
     font-family: "IBM Plex Mono", monospace;
     font-weight: 300;
     
@@ -42,8 +48,9 @@
 
 .addProduct__form-input:focus{
     outline: none;
-    border: solid 3px #072083;
+    border: solid 3px #5ae523;
     transition: 2ms;
+    transform: scale(1.05);
     
 }
 
@@ -54,6 +61,7 @@
     width: 100%;
     gap: 10px;
     justify-content: center;
+
 }
 
 .addProduct__button-send, .addProduct__button-clear{
@@ -61,10 +69,12 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    height: 35px;
+    height: 45px;
     font-family: "IBM Plex Mono", monospace;
     font-weight: 400;
     font-size: 12px;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, .5);
+
 }
 
 .addProduct__button-send{
@@ -75,8 +85,8 @@
 }
 
 .addProduct__button-send:hover{
-    background-color: #072083; 
-    color: white;
+    background-color: #5ae523; 
+    color: black;
     transform: scale(1.05);
     transition: 5ms;
 }
@@ -86,12 +96,30 @@
     border: solid 2px #F85B1A;
     border-radius: 10px;
     background: none;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
 
 .addProduct__button-clear:hover{
-    border-color: #072083; 
-    color: #072083;
+    border-color: #5ae523; 
+    color: #5ae523;
     transform: scale(1.05);
     transition: 5ms;
     
+}
+.addProduct__mensaje, .addProduct__mensaje-exito{
+    display: none
+}
+
+.addProduct__mensaje-exito-activo{
+    text-align: center;
+    color: #5ae523; 
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
+}
+
+.addProduct__mensaje-activo{
+    text-align: center;
+    color: #ffffff; 
+    font-size: 25px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .5);
 }

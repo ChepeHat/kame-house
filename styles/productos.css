@@ -11,7 +11,8 @@
 .product__title-txt{
     text-align: center;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, .5);
 }
 
 .product__container{
