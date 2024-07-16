@@ -16,10 +16,6 @@
 - `Funcionalidad 3`: DELETE Tiene la opción de eliminar estos productos con el ícono de basurero.
 
 
-<h4 align="center">
-:construction: Proyecto en construcción :construction:
-</h4>
-
  <p align="left">
    <img src="https://img.shields.io/badge/STATUS-EN%20DESAROLLO-green">
    </p>
